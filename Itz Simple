@@ -1,0 +1,13 @@
+t=int(input())
+for i in range(t):
+    n,k,p=map(int,input().split())
+    a=list(map(int,input().split()))
+    ved=k+max(a)
+    varun=p+sum(a)-max(a)
+        
+    if ved> varun:
+        print("Ved")
+    elif ved < varun:
+        print("Varun")
+    else:
+        print("Equal")
