@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    x=[0]*12
+    for i in range(n):
+        p,s=map(int,input().split())
+        if p<=8:
+            x[p]=max(x[p],s)
+        
+    print(sum(x[:9]))
