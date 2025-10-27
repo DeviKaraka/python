@@ -1,0 +1,12 @@
+t = int(input())
+for _ in range(t):
+    n, x = map(int, input().split())
+    s = input().strip()
+    visited = {x}
+    for c in s:
+        if c == 'L':
+            x -= 1
+        else:
+            x += 1
+        visited.add(x)
+    print(len(visited))
