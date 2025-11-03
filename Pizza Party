@@ -1,0 +1,6 @@
+import math
+
+A, B = map(int, input().split())
+total_slices_needed = 4 * (A + 1) + 3 * B
+num_pizzas = math.ceil(total_slices_needed / 8)
+print(int(num_pizzas))
