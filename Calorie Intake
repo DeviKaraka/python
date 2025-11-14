@@ -1,0 +1,8 @@
+X, Y, Z = map(int, input().split())
+
+calories_eaten = Y * Z
+
+if calories_eaten > X:
+    print("-1")
+else:
+    print(X - calories_eaten)
