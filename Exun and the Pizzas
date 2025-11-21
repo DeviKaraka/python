@@ -1,0 +1,5 @@
+
+N, K, R = map(int, input().split())
+remaining_pizzas = N - K
+revenue = remaining_pizzas * R
+print(revenue)
