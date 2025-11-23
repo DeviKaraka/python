@@ -1,0 +1,4 @@
+a, b, c = map(int, input().split())
+chef_sales = a * c
+chefina_sales = b * c
+print(max(chef_sales, chefina_sales))
