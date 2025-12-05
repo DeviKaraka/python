@@ -1,0 +1,9 @@
+ef solve():
+    X = int(input())
+    if X > 100:
+        print(X - 10)
+    else:
+        print(X)
+
+T = int(input())
+for _ in range(T):
