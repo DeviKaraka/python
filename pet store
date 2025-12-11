@@ -1,0 +1,32 @@
+# number of test cases
+T = int(input())
+
+for _ in range(T):
+    # number of animals
+    N = int(input())
+
+    # list of animal types
+    animals = list(map(int, input().split()))
+
+    # dictionary to count frequency of each type
+    freq = {}
+
+    # counting each animal type
+    for a in animals:
+        if a in freq:
+            freq[a] += 1
+        else:
+            freq[a] = 1
+
+    # check if all counts are even
+    possible = True
+    for count in freq.values():
+        if count % 2 != 0:      # if count is odd
+            possible = False
+            break
+
+    # print result
+    if possible:
+        print("YES")
+    else:
+        print("NO")
