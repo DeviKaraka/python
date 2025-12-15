@@ -1,0 +1,13 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    inside=set()
+    max_people=0
+    for person in a:
+        if person in inside:
+            inside.remove(person)
+        else:
+            inside.add(person)
+        max_people=max(max_people,len(inside))
+    print(max_people)
