@@ -1,0 +1,8 @@
+class Solution:
+    def leftRotate(self, arr, d):
+        part=arr[:d]
+        del arr[:d]
+        arr.extend(part)
+        return(arr)
+            
+        
