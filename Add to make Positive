@@ -1,0 +1,10 @@
+import math
+a=int(input())
+for i in range(a):
+    t=int(input())
+    b=list(map(int,input().split()))
+    s=sum(b)
+    if s>=0:
+        print("0")
+    else:
+        print(math.ceil((-s)/t))
