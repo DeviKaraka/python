@@ -1,0 +1,17 @@
+class Solution:
+    def moreFrequent(self, arr, x, y):
+        #code here
+        x_c=0
+        y_c=0
+        for i in arr:
+            if x==i:
+                x_c +=1
+            elif y==i:
+                y_c += 1
+        if x_c>y_c:
+            return x
+        elif y_c>x_c:
+            return y
+        else:
+            return min(x,y)
+       
