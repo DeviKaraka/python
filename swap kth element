@@ -1,0 +1,8 @@
+class Solution:
+    def swapKth(self, arr, k):
+        c=arr[-k]
+        arr[-k]=arr[k-1]
+        arr[k-1]=c
+        return c
+       
+       
