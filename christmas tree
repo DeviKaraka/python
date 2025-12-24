@@ -1,0 +1,4 @@
+n,a,m,b=map(int,input().split())
+c=n*a 
+d=m*b 
+print(d-c)
