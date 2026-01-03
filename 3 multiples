@@ -1,0 +1,8 @@
+N = int(input())
+
+if N % 3 == 0:
+    print(N)
+elif abs(N - (N - N % 3)) < abs(N - (N - N % 3 + 3)):
+    print(N - N % 3)
+else:
+    print(N - N % 3 + 3)
