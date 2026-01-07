@@ -1,0 +1,12 @@
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    A = list(map(int, input().split()))
+    
+    ans = float('inf')
+    
+    for i in range(n):
+        ans = min(ans, max(A[i], A[i+1]))
+    
+    print(ans)
