@@ -1,0 +1,4 @@
+x = int(input())
+remaining_money = x - 100
+popcorn_buckets = remaining_money // 50
+print(popcorn_buckets)
