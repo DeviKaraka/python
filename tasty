@@ -1,0 +1,12 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    c=2*x
+    d=5*y
+    if c<d:
+        print("Candy")
+    elif c==d:
+        print("Either")
+    else:
+        print("Chocolate")
