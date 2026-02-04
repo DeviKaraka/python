@@ -1,0 +1,8 @@
+# cook your dish here
+n,x,y=map(int,input().split())
+a=2*x 
+b=2*y 
+if n>=a and n>=b:
+    print("YES")
+else:
+    print("NO")
