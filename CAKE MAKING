@@ -1,0 +1,8 @@
+# Read input
+A, B = map(int, input().split())
+
+# Calculate total possible cakes
+total_cakes = A * B - min(A, B)
+
+# Output the result
+print(total_cakes)
