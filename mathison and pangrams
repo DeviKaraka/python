@@ -1,0 +1,15 @@
+t = int(input())
+
+for _ in range(t):
+    prices = list(map(int, input().split()))
+    s = input().strip()
+    
+    present = set(s)
+    total_cost = 0
+    
+    for i in range(26):
+        letter = chr(ord('a') + i)
+        if letter not in present:
+            total_cost += prices[i]
+    
+    print(total_cost)
